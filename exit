@@ -1,0 +1,18 @@
+[1mdiff --git a/app/controllers/application_controller.rb b/app/controllers/application_controller.rb[m
+[1mindex 09705d1..5ff7bab 100644[m
+[1m--- a/app/controllers/application_controller.rb[m
+[1m+++ b/app/controllers/application_controller.rb[m
+[36m@@ -1,2 +1,3 @@[m
+ class ApplicationController < ActionController::Base[m
+[32m+[m[41m    [m
+ end[m
+[1mdiff --git a/config/routes.rb b/config/routes.rb[m
+[1mindex 787824f..31d40ec 100644[m
+[1m--- a/config/routes.rb[m
+[1m+++ b/config/routes.rb[m
+[36m@@ -1,3 +1,4 @@[m
+ Rails.application.routes.draw do[m
+[31m-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html[m
+[32m+[m[32m    root to: 'tasklists#index'[m
+[32m+[m[32m    resources :tasklists[m
+ end[m
